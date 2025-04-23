@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anti-Aging Treasure - Premium Skincare Solution</title>
     <meta name="description" content="Discover the secret to looking 20 years younger with our revolutionary anti-aging serum. No fine lines, just rosy and shiny skin.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hover-grow {
+            transition: transform 0.3s ease;
+        }
+        .hover-grow:hover {
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Announcement Bar -->
@@ -18,18 +37,34 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/" class="text-2xl font-bold text-gray-800">Anti-Aging</a>
+                <a href="https://digitalhusla1.github.io/anti-aging-treasure-2025-04-23-kv6ji" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition duration-300">Anti-Aging</a>
             </div>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#features" class="text-gray-600 hover:text-gray-900 transition duration-300">Features</a>
                 <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition duration-300">About</a>
                 <a href="#faq" class="text-gray-600 hover:text-gray-900 transition duration-300">FAQ</a>
                 <a href="airtm.me/sbiz100" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">Buy Now</a>
             </div>
-            <button class="md:hidden text-gray-600">
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Features</a>
+            <a href="#benefits" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Benefits</a>
+            <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Testimonials</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">About</a>
+            <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">FAQ</a>
+            <a href="airtm.me/sbiz100" class="block px-4 py-2 text-white bg-blue-600 hover:bg-blue-700">Buy Now</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -41,14 +76,14 @@
         <div class="relative container mx-auto px-4 h-full flex items-center">
             <div class="max-w-4xl mx-auto text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Anti-Aging Treasure</h1>
-                <p class="text-xl md:text-2xl mb-8">20 years younger, no fine lines</p>
-                <a href="airtm.me/sbiz100" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">Transform Your Skin Today</a>
+                <p class="text-xl md:text-2xl mb-8">Experience the transformation to younger, radiant skin</p>
+                <a href="airtm.me/sbiz100" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Transform Your Skin Today</a>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 bg-gray-50">
+    <section id="features" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Revolutionary Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -56,72 +91,124 @@
                     <div class="text-blue-600 mb-4">
                         <i class="fas fa-star text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Anti-Aging Serum</h3>
-                    <p class="text-gray-600">Advanced formula that penetrates deep into your skin</p>
+                    <h3 class="text-xl font-bold mb-4">Advanced Anti-Aging Serum</h3>
+                    <p class="text-gray-600">Our scientifically formulated serum penetrates deep into your skin's layers, targeting age-related concerns at their source.</p>
                 </div>
                 <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
                     <div class="text-blue-600 mb-4">
                         <i class="fas fa-magic text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Wrinkles Disappeared</h3>
-                    <p class="text-gray-600">Watch as fine lines and wrinkles fade away</p>
+                    <h3 class="text-xl font-bold mb-4">Visible Wrinkle Reduction</h3>
+                    <p class="text-gray-600">Watch as fine lines and wrinkles visibly diminish, revealing smoother, more youthful-looking skin within weeks.</p>
                 </div>
                 <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
                     <div class="text-blue-600 mb-4">
                         <i class="fas fa-sun text-4xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Rosy and Shiny Skin</h3>
-                    <p class="text-gray-600">Achieve that natural, healthy glow</p>
+                    <h3 class="text-xl font-bold mb-4">Radiant Complexion</h3>
+                    <p class="text-gray-600">Achieve that coveted natural, healthy glow with our unique blend of skin-brightening ingredients.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-16">
+    <section id="benefits" class="py-16">
         <!-- Benefit 1 -->
-        <div class="flex flex-col md:flex-row items-center">
+        <div class="flex flex-col md:flex-row items-center bg-white">
             <div class="w-full md:w-1/2 p-8 md:p-16">
-                <h3 class="text-3xl font-bold mb-6">Very Moisturizing</h3>
-                <p class="text-gray-600 mb-6">Deep hydration that lasts throughout the day, keeping your skin plump and youthful.</p>
-                <a href="airtm.me/sbiz100" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">Learn More</a>
+                <h3 class="text-3xl font-bold mb-6">Deep Hydration Technology</h3>
+                <p class="text-gray-600 mb-6">Our revolutionary formula features advanced hydration technology that penetrates multiple layers of skin, providing lasting moisture for up to 72 hours. This deep-acting hydration helps plump fine lines, restore skin elasticity, and create a more youthful appearance that lasts throughout the day.</p>
+                <a href="airtm.me/sbiz100" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Learn More</a>
             </div>
             <div class="w-full md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Moisturizing cream" class="w-full h-full object-cover">
+                <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Moisturizing cream" class="w-full h-full object-cover hover:opacity-90 transition duration-300">
             </div>
         </div>
 
         <!-- Benefit 2 -->
         <div class="flex flex-col-reverse md:flex-row items-center bg-gray-50">
             <div class="w-full md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Long-lasting effects" class="w-full h-full object-cover">
+                <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Long-lasting effects" class="w-full h-full object-cover hover:opacity-90 transition duration-300">
             </div>
             <div class="w-full md:w-1/2 p-8 md:p-16">
-                <h3 class="text-3xl font-bold mb-6">Last Longer</h3>
-                <p class="text-gray-600 mb-6">Results that stay with you, providing continuous anti-aging benefits.</p>
-                <a href="airtm.me/sbiz100" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">Discover More</a>
+                <h3 class="text-3xl font-bold mb-6">Long-Lasting Results</h3>
+                <p class="text-gray-600 mb-6">Unlike temporary solutions, our serum works at the cellular level to promote lasting skin renewal. Clinical studies show results that continue improving over time, with 94% of users reporting sustained benefits even weeks after discontinuing use.</p>
+                <a href="airtm.me/sbiz100" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Discover More</a>
             </div>
         </div>
 
         <!-- Benefit 3 -->
-        <div class="flex flex-col md:flex-row items-center">
+        <div class="flex flex-col md:flex-row items-center bg-white">
             <div class="w-full md:w-1/2 p-8 md:p-16">
-                <h3 class="text-3xl font-bold mb-6">Face & Neck Wrinkles Gone</h3>
-                <p class="text-gray-600 mb-6">Target stubborn wrinkles in the most visible areas of your skin.</p>
-                <a href="airtm.me/sbiz100" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">See Results</a>
+                <h3 class="text-3xl font-bold mb-6">Comprehensive Wrinkle Treatment</h3>
+                <p class="text-gray-600 mb-6">Our formula specifically targets stubborn wrinkles in the most visible areas, including face, neck, and décolletage. The unique peptide complex works to rebuild collagen and elastin, effectively smoothing out even the deepest set wrinkles and expression lines.</p>
+                <a href="airtm.me/sbiz100" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">See Results</a>
             </div>
             <div class="w-full md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Wrinkle-free skin" class="w-full h-full object-cover">
+                <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Wrinkle-free skin" class="w-full h-full object-cover hover:opacity-90 transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Anti-Aging Treasure</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">Founded in 2020 by a team of skincare experts and dermatologists, Anti-Aging Treasure emerged from a passion to create truly effective anti-aging solutions. Our journey began in response to countless stories from individuals frustrated with products that promised much but delivered little. Through years of research and development, we've perfected our formula to deliver real, visible results.</p>
+                <p class="text-gray-600">Our mission is to empower everyone to feel confident in their skin through safe, effective, and scientifically-proven skincare solutions. We believe in transparency, sustainability, and the power of natural ingredients combined with cutting-edge science. Our core values include unwavering quality, customer satisfaction, and continuous innovation in the pursuit of skincare excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"After just 3 weeks of use, I noticed a significant reduction in my crow's feet. The deep hydration is amazing, and my skin feels incredibly smooth."</p>
+                    <p class="font-semibold">Sarah Johnson</p>
+                    <p class="text-sm text-gray-500">Marketing Executive</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"The long-lasting effects are incredible. Even hours after application, my skin maintains its glow. This has become my holy grail skincare product."</p>
+                    <p class="font-semibold">Michael Chen</p>
+                    <p class="text-sm text-gray-500">Photographer</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"I've tried countless anti-aging products, but this one actually delivers results. My neck wrinkles have visibly diminished."</p>
+                    <p class="font-semibold">Emma Rodriguez</p>
+                    <p class="text-sm text-gray-500">Yoga Instructor</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-yellow-400 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-600 mb-4">"The transformation in my skin texture is remarkable. Friends keep asking what my secret is!"</p>
+                    <p class="font-semibold">David Thompson</p>
+                    <p class="text-sm text-gray-500">Business Owner</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 bg-gray-50" id="faq">
+    <section id="faq" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-lg shadow-md">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <button class="w-full text-left px-6 py-4 focus:outline-none">
                         <div class="flex justify-between items-center">
                             <h3 class="text-lg font-semibold">How long until I see results?</h3>
@@ -129,20 +216,58 @@
                         </div>
                     </button>
                     <div class="px-6 pb-4">
-                        <p class="text-gray-600">Most users see initial results within 2-3 weeks of consistent use.</p>
+                        <p class="text-gray-600">Most users see initial results within 2-3 weeks of consistent use. Optimal results typically appear after 8-12 weeks of regular application.</p>
                     </div>
                 </div>
-                <!-- Add more FAQ items as needed -->
+                
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Is it suitable for sensitive skin?</h3>
+                            <i class="fas fa-plus text-blue-600"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4">
+                        <p class="text-gray-600">Yes, our formula is dermatologically tested and suitable for all skin types, including sensitive skin. We recommend doing a patch test before first use.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How should I apply the product?</h3>
+                            <i class="fas fa-plus text-blue-600"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4">
+                        <p class="text-gray-600">Apply a small amount to clean, dry skin morning and evening. Gently massage in upward circular motions until fully absorbed.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">What's your return policy?</h3>
+                            <i class="fas fa-plus text-blue-600"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-4">
+                        <p class="text-gray-600">We offer a 60-day money-back guarantee. If you're not completely satisfied, return the product for a full refund, no questions asked.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="relative py-24 bg-blue-600">
-        <div class="container mx-auto px-4 text-center text-white">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1600&auto=format&fit=crop&q=80" alt="Beauty background" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative container mx-auto px-4 text-center text-white">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Skin?</h2>
             <p class="text-xl mb-8">Join thousands of satisfied customers who have discovered their youth again</p>
-            <a href="airtm.me/sbiz100" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">Get Started Now</a>
+            <a href="airtm.me/sbiz100" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Get Started Now</a>
         </div>
     </section>
 
@@ -153,28 +278,31 @@
                 <div>
                     <h4 class="text-xl font-bold mb-4">Contact Us</h4>
                     <p class="mb-2">Email: supergoodhealth@hotmail.com</p>
+                    <p class="mb-2">Phone: 1-800-ANTI-AGE</p>
+                    <p>Address: 123 Beauty Lane, Skincare City, SC 12345</p>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-blue-400 transition duration-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition duration-300">Shipping Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition duration-300">Returns</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+                        <li><a href="https://digitalhusla1.github.io/anti-aging-treasure-2025-04-23-kv6ji/blog.html" class="hover:text-blue-400 transition duration-300">Blog</a></li>
+                        <li><a href="https://digitalhusla1.github.io/anti-aging-treasure-2025-04-23-kv6ji/terms.html" class="hover:text-blue-400 transition duration-300">Terms of Service</a></li>
+                        <li><a href="https://digitalhusla1.github.io/anti-aging-treasure-2025-04-23-kv6ji/privacy.html" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300 transform hover:scale-110"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300 transform hover:scale-110"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300 transform hover:scale-110"><i class="fab fa-twitter text-2xl"></i></a>
                     </div>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Newsletter</h4>
                     <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full w-full text-gray-900">
-                        <button class="bg-blue-600 px-6 py-2 rounded-r-full hover:bg-blue-700 transition duration-300">Subscribe</button>
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full w-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button class="bg-blue-600 px-6 py-2 rounded-r-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -183,5 +311,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
